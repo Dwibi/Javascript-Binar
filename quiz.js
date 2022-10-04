@@ -170,7 +170,15 @@ function filterArrayBaru() {
 console.log(filterArrayBaru(array));
 
 // 10
-function arrayPush() {
-  console.log(arrayOf);
+function arrayPush(object) {
+  let array = arrayOf;
+  array.push(object);
+  return array;
 }
-arrayPush();
+const arrayPushNew = arrayPush({
+  nama_mobil: "ferrari",
+  kecepatan: "6000 cc",
+  harga: 20000000000,
+  tipe: "tidak diketahui",
+});
+console.log(arrayPushNew);
